@@ -58,8 +58,6 @@ int main() {
         populateMatrix(matrix);
         copyMatrix(matrixHumanGame,matrix);
         printMatrix(matrix);
-//        addSingleLine();
-//        printMatrix(matrixHumanGame);
 //        printResultGame(matrix);
 
         addDoubleLine();
@@ -203,7 +201,7 @@ int generateInsertNumberColumns(){
  * Name:        maxNumberOfBouble
  * Output:      int
  * Function:    create a limit
- *              If we found, we will return true otherwise we will return false
+ *              
  */
 int maxNumberOfBouble(){
     return ROWS_NUM*COLS_NUM/BASEOFNUMBOUBLE;
@@ -246,8 +244,8 @@ void copyMatrix(void * destmat, void * sourcemat){
 void printHelloWorld(){
     printf("Hello world! Bouble blast");
     printf("Instructions:\n");
-    printf("First rules: You have a limited moves. If you go over than robot moves you will loose but you will win if you will finish before robot moves.\n");
-    printf("Second rules: You will see only one time the matrix so you have to image your moves if you want to win.\n");
+    printf("First rule: You have a limited moves. If you go over than robot moves you will loose but you will win if you will finish before robot moves.\n");
+    printf("Second rule: You will see only one time the matrix so you have to image your moves if you want to win.\n");
     printf("Attention! You have to keep in mind rows and columns start from zero.\n");
 }
 
@@ -464,7 +462,7 @@ void shiftUp(int x, int y, int matrix[ROWS_NUM][COLS_NUM]){
 }
 
 /*
- * Name:        printResultGameRight
+ * Name:        printResultGame
  * Output:      void
  * Function:    handle i/o files.
  *              It will handle the creation of a new text file.
