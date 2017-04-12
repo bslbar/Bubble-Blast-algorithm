@@ -102,7 +102,7 @@ int main() {
             printf("This is you %d move. You have only %d moves left\n",countHumanMove, countRobotMove-countHumanMove);
             humanVictory= foundNotZeroElement(matrixHumanGame);
 
-        }while(humanVictory != true || countRobotMove-countHumanMove==0);
+        }while(humanVictory != true && countRobotMove-countHumanMove>0);
 
         if(humanVictory==true)
             printf("You are the winner!\n");
