@@ -305,7 +305,7 @@ int calculateRobotMove(int x, int y, int matrix[ROWS_NUM][COLS_NUM]){
 
 
 /*
- * Name:        boundaryFill
+ * Name:        handleExplosion
  * Output:      void
  * Function:    this test show us if a cell inside matrix contains a number.
  *              If will find, we will handle the bomb
